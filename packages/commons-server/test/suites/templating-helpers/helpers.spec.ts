@@ -390,7 +390,7 @@ describe('Template parser', () => {
         {} as any
       );
 
-      expect(parseResult).to.be.equal('2023');
+      expect(parseResult).to.be.equal(new Date().getFullYear().toString());
     });
   });
 
@@ -439,7 +439,7 @@ describe('Template parser', () => {
         {} as any
       );
 
-      expect(parseResult).to.be.equal('2023');
+      expect(parseResult).to.be.equal(new Date().getFullYear().toString());
     });
   });
 

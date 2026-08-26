@@ -1,9 +1,7 @@
 name: Release libs (NPM)
 
 on:
-  push:
-    tags:
-      - libs-v*
+  workflow_dispatch:
 
 jobs:
   npm-publish:

@@ -20,7 +20,8 @@ export const config: WebdriverIO.Config = {
         args: [
           'app=' + join(process.cwd(), './dist/app.js'),
           'user-data-dir=' + join(process.cwd(), 'tmp'),
-          '--remote-debugging-port=9222'
+          '--remote-debugging-port=9222',
+          '--no-sandbox'
         ]
       },
       acceptInsecureCerts: true
